@@ -1,0 +1,12 @@
+name: First Workflow
+on: workflow_dispatch #mean waits for user to start manually the workflow
+jobs:
+  first-job: # name of job can be snake_case, kebab-case, straightcase, etc
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
+        
+# this is my first basic workflow with 1 job and 2 steps
